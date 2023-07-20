@@ -21,19 +21,19 @@
           <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Events</a>
+              <a class="nav__link" href="#events">Events</a>
             </li>
             <li>
-              <a class="nav__link">Staff picks</a>
+              <a class="nav__link" href="#staff">Staff picks</a>
             </li>
             <li>
-              <a class="nav__link">Become a member</a>
+              <a class="nav__link" href="#member">Become a member</a>
             </li>
             <li>
-              <a class="nav__link">About</a>
+              <a class="nav__link" href="#about">About</a>
             </li>
             <li>
-              <a class="nav__link">Contacts</a>
+              <a class="nav__link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -58,7 +58,7 @@
       </header>
 
       <main class="content">
-        <section class="events">
+        <section class="events" id="events">
           <div class="events__content">
             <h2 class="events__heading">Upcoming events:</h2>
             <h3 class="events__title">
@@ -143,10 +143,10 @@
           </div>
         </section>
 
-        <section class="staff">
+        <section class="staff" id="staff">
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
-          <ul class="staff__card_list staff__card_margin-top">
+          <ul class="staff__cards">
             <li class="card">
               <div class="card__content">
                 <h3 class="card__title">Introduction to Algorithms</h3>
@@ -217,7 +217,7 @@
           </ul>
         </section>
 
-        <section class="membership">
+        <section class="membership" id="member">
           <h2 class="membership__title">Becoming a library member is easy!</h2>
           <ul class="membership__steps">
             <li class="step">
@@ -273,7 +273,7 @@
           </ul>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
           <h2 class="about__title">About the library</h2>
           <div class="about__content">
             <p class="about__paragraph">
@@ -297,7 +297,8 @@
           <div class="about__circle"></div>
         </section>
       </main>
-      <footer class="footer">
+
+      <footer class="footer" id="contacts">
         <div class="footer__columns">
           <div class="footer__column">
             <div class="footer__logo">
@@ -335,9 +336,7 @@
             </ul>
           </div>
         </div>
-        <div class="footer__copyright">
-          <p>© 2023 Cynthia</p>
-        </div>
+        <p class="footer__copyright">© 2023 Cynthia</p>
       </footer>
     </div>
   </body>
